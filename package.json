@@ -33,7 +33,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
+    "eslint": "^6.1.0",
     "redux-thunk": "^2.3.0"
   }
 }
