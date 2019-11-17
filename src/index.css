@@ -1,13 +1,72 @@
+html,
 body {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  background: url(assets/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.img-custom {
+  width: 4rem;
+  padding-right: 1rem;
+}
+
+.card-custom-header {
+  background: url(./assets/header-bg.jpg);
+  background-origin: border-box;
+  background-size: cover;
+  color: white;
+  font-weight: 900 !important;
+  text-transform: uppercase;
+  font-style: italic;
+  text-shadow: .15rem .15rem rgba(0, 0, 0, 0.67);
+}
+
+.venue {
+  font-size: 1rem;
+  font-weight: 400 !important;
+}
+
+/*.details-wrapper .col-sm-6:nth-child(odd) + .col-sm-6:nth-child(n+1) {*/
+/*  background: lightblue !important;*/
+/*}*/
+
+.details-wrapper .col-sm-6:nth-child(even){
+  background-color: #f8f8f8;
+  border-top: 0.1rem solid white !important;
+}
+.details-wrapper .col-sm-6:nth-child(odd){
+  background-color: #e2e2e2;
+  border-top: 0.1rem solid white !important;
+}
+
+@media (min-width: 576px) {
+  .details-wrapper .col-sm-6:nth-child(4n), .details-wrapper .col-sm-6:nth-child(4n-1) {
+    background: #f8f8f8;
+    border-top: 0.1rem solid white !important;
+  }
+  .details-wrapper .col-sm-6:nth-child(4n-2), .details-wrapper .col-sm-6:nth-child(4n-3) {
+    background: #e2e2e2;
+    border-top: 0.1rem solid white !important;
+  }
 }
