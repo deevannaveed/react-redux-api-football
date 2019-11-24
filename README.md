@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Important Note: Please disable your Browser's CORS blacking to run this project.
+## Important Note: Please disable your Browser's CORS blocking to run this project.
 
 ## Available Scripts
 
